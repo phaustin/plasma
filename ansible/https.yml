@@ -1,9 +1,9 @@
 ---
 - hosts: all
   become: true
-
+  vars_files:
+    - vars/default.yml
   tasks:
-
     # Enable Automatic HTTPS with Let's Encrypt
     - name: Enable HTTPS
       shell: |
