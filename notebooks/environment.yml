@@ -1,0 +1,18 @@
+name: ansible
+channels:
+  - eoas_ubc
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip=20
+  - numpy
+  - scipy
+  - matplotlib
+  - jupytext
+  - pandas
+  - git
+  - conda-lock
+  - jupyterlab
+  - bash_kernel
+# conda-lock -f environment.yml -p linux-64
+# mamba env create --file environment.yml --name ansible
